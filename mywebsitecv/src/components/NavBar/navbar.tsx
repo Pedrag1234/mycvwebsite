@@ -18,14 +18,14 @@ export default function Navbar() {
     const [state, setState] = React.useState(false)
 
     const menus = [
-        { title: "Home", path: "/home", icon: <FaHome /> },
-        { title: "About Me", path: "/about", icon: <IoPersonSharp /> },
-        { title: "Projects", path: "/projs", icon: <IoGrid /> },
-        { title: "Contacts", path: "/conatcts", icon: <FaPhone /> },
+        { title: "Home", path: "#home", icon: <FaHome /> },
+        { title: "About Me", path: "#about", icon: <IoPersonSharp /> },
+        { title: "Projects", path: "#projs", icon: <IoGrid /> },
+        { title: "Contacts", path: "#conatcts", icon: <FaPhone /> },
     ]
 
     return (
-        <nav className="bg-primary w-full border-b md:border-0">
+        <nav className="bg-primary w-full border-b md:border-0" >
             <div className="items-center px-4 max-w-screen-xl md:flex md:px-8">
                 <div className="flex items-left justify-between py-3 md:py-5 md:block">
                     <div className="md:hidden">
