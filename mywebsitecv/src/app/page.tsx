@@ -1,3 +1,4 @@
+import AboutMe from "@/components/AboutMe/aboutme";
 import Contacts from "@/components/Contacts/contacts";
 import Footer from "@/components/Footer/footer";
 import Intro from "@/components/Introduction/intro";
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <NavBar />
       <Intro />
+      <AboutMe />
       <Contacts />
       <Footer />
     </>
