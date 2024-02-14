@@ -21,7 +21,7 @@ export default function Navbar() {
         { title: "Home", path: "#home", icon: <FaHome /> },
         { title: "About Me", path: "#about", icon: <IoPersonSharp /> },
         { title: "Projects", path: "#projs", icon: <IoGrid /> },
-        { title: "Contacts", path: "#conatcts", icon: <FaPhone /> },
+        { title: "Contacts", path: "#contacts", icon: <FaPhone /> },
     ]
 
     return (

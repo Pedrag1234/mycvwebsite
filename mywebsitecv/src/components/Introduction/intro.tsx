@@ -17,7 +17,7 @@ import {
 
 export default function Intro() {
     return (
-        <div id="#home" className="flex items-center justify-center h-screen">
+        <section id="home" className="flex items-center justify-center h-screen">
             <Card>
                 <CardHeader>
                     <CardTitle className="flex justify-center text-4xl">I'm Pedro Azevedo</CardTitle>
@@ -43,6 +43,6 @@ export default function Intro() {
                     </Button>
                 </CardFooter>
             </Card>
-        </div>
+        </section>
     );
 }
