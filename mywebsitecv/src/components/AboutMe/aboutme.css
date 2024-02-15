@@ -1,0 +1,22 @@
+.emoji-list-container {
+  display: flex;
+  align-items: center;
+}
+
+.emoji-list {
+  list-style: none;
+  padding: 0;
+}
+
+.emoji-list li {
+  margin-bottom: 2px; /* Adjust the spacing between items as needed */
+}
+
+.emoji-item {
+  display: flex;
+  align-items: center;
+}
+
+.language-text {
+  margin-left: 8px; /* Adjust the spacing between flag and text as needed */
+}
