@@ -30,7 +30,7 @@ interface TimelineEventsProps {
 
 const TimelineSection: React.FC<TimelineEventsProps> = ({events}) =>
     events.length > 0 && (
-        <div className='timeline-container'>
+        <div className='timeline-container z-10'>
             {events.map((event,idx) =>(
                 <TimelineItem 
                     title={event.title}

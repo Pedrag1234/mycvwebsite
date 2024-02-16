@@ -82,7 +82,7 @@ export default function AboutMe() {
             </div>
           </div>
 
-          <div className="lg:pl-16 basis-3/4 ml-4 mt-4 md:w-1/2 text-white overflow-hidden order-2 md:order-2">
+          <div className="lg:pl-16 max-w-[800px] basis-3/4 ml-4 mt-4 md:w-1/2 text-white overflow-hidden order-2 md:order-2">
             <p className="text-white">
               From my earliest years, a fervent passion for video games and computers ignited within me, steering my
               journey towards becoming a game and software developer today. Despite my relative lack of experience, I

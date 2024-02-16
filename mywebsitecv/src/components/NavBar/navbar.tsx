@@ -18,8 +18,31 @@ export default function Navbar() {
     { title: 'Contacts', path: '#contacts', icon: <FaPhone /> },
   ];
 
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+  
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+  
+    const elem = document.getElementById(targetId);
+  
+    if (elem) {
+      const rect = elem.getBoundingClientRect();
+      const isAlreadyInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
+  
+      if (!isAlreadyInView) {
+        window.scrollTo({
+          top: rect.top + window.scrollY,
+          behavior: "smooth",
+        });
+      }
+    }
+  };
+
+
   return (
-    <nav className="bg-primary w-full border-b md:border-0">
+    <nav className="bg-primary w-full border-b md:border-0 sticky top-0 z-20">
       <div className="items-center px-4 max-w-screen-xl md:flex md:px-8">
         <div className="flex items-left justify-between py-3 md:py-5 md:block">
           <div className="md:hidden">
@@ -37,7 +60,7 @@ export default function Navbar() {
               <li key={idx} className="text-white hover:text-gray-400">
                 <div className="container px-0" style={{ display: 'flex', alignItems: 'center' }}>
                   {item.icon}
-                  <Link href={item.path} style={{ marginLeft: '8px' }}>
+                  <Link href={item.path} style={{ marginLeft: '8px' }} onClick={handleScroll}>
                     {item.title}
                   </Link>
                 </div>
@@ -49,3 +72,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+
