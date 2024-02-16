@@ -3,6 +3,7 @@ import Contacts from '@/components/Contacts/contacts';
 import Footer from '@/components/Footer/footer';
 import Intro from '@/components/Introduction/intro';
 import NavBar from '@/components/NavBar/navbar';
+import Timeline from '@/components/Timeline/timeline';
 import Image from 'next/image';
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <NavBar />
       <Intro />
       <AboutMe />
+      <Timeline />
       <Contacts />
       <Footer />
     </>
