@@ -18,28 +18,26 @@ export default function Navbar() {
     { title: 'Contacts', path: '#contacts', icon: <FaPhone /> },
   ];
 
-
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
-  
+
     const href = e.currentTarget.href;
-    const targetId = href.replace(/.*\#/, "");
-  
+    const targetId = href.replace(/.*\#/, '');
+
     const elem = document.getElementById(targetId);
-  
+
     if (elem) {
       const rect = elem.getBoundingClientRect();
       const isAlreadyInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
-  
+
       if (!isAlreadyInView) {
         window.scrollTo({
           top: rect.top + window.scrollY,
-          behavior: "smooth",
+          behavior: 'smooth',
         });
       }
     }
   };
-
 
   return (
     <nav className="bg-primary w-full border-b md:border-0 sticky top-0 z-20">
@@ -72,5 +70,3 @@ export default function Navbar() {
     </nav>
   );
 }
-
-

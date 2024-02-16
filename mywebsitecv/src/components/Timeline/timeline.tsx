@@ -1,48 +1,41 @@
-import './timeline.css'
+import './timeline.css';
 
-interface Event{
-    title: string,
-    desc: string,
-    date: string,
-    category: {
-        tag: string,
-        color: string,
-    }
+interface Event {
+  title: string;
+  desc: string;
+  date: string;
+  category: {
+    tag: string;
+    color: string;
+  };
 }
 
-const TimelineItem: React.FC<Event> = ({title,desc,date,category}) => (
-    <div className='timeline-item'>
-        <div className='timeline-item-content'>
-            <span className='tag' style={{background:category.color}}>
-                {category.tag}
-            </span>
-            <time>{date}</time>
-            <h2>{title}</h2>
-            <p>{desc}</p>
-            <span className="circle" />
-        </div>
+const TimelineItem: React.FC<Event> = ({ title, desc, date, category }) => (
+  <div className="timeline-item">
+    <div className="timeline-item-content">
+      <span className="tag" style={{ background: category.color }}>
+        {category.tag}
+      </span>
+      <time>{date}</time>
+      <h2>{title}</h2>
+      <p>{desc}</p>
+      <span className="circle" />
     </div>
+  </div>
 );
 
 interface TimelineEventsProps {
-    events: Event[];
+  events: Event[];
 }
 
-const TimelineSection: React.FC<TimelineEventsProps> = ({events}) =>
-    events.length > 0 && (
-        <div className='timeline-container z-10'>
-            {events.map((event,idx) =>(
-                <TimelineItem 
-                    title={event.title}
-                    desc={event.desc}
-                    date={event.date}
-                    category={event.category}
-                    key={idx} 
-                />
-            ))}
-        </div>
-    );
-
+const TimelineSection: React.FC<TimelineEventsProps> = ({ events }) =>
+  events.length > 0 && (
+    <div className="timeline-container z-10">
+      {events.map((event, idx) => (
+        <TimelineItem title={event.title} desc={event.desc} date={event.date} category={event.category} key={idx} />
+      ))}
+    </div>
+  );
 
 export default function Timeline() {
   const events: Event[] = [
@@ -66,8 +59,5 @@ export default function Timeline() {
     },
   ];
 
-  return (
-    <TimelineSection events={events}/>
-  )
-  
+  return <TimelineSection events={events} />;
 }
