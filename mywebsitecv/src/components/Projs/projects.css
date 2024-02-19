@@ -1,0 +1,8 @@
+.custom-badge {
+  transition: background-color 0.3s ease;
+}
+
+.custom-badge:hover {
+  background-color: #e74c3c;
+  color: #fff;
+}

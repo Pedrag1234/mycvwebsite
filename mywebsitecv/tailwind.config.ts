@@ -67,6 +67,10 @@ const config = {
         'accordion-down': 'accordion-down 0.3s ease-out',
         'accordion-up': 'accordion-up 0.3s ease-out',
       },
+      backgroundImage: {
+        'intro-image': "url('../img/intro.jpg')",
+        'website-pattern': "url('../img/background.png')",
+      }
     },
   },
   plugins: [require('tailwindcss-animate')],

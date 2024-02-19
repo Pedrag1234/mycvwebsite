@@ -39,8 +39,8 @@ export default function Intro() {
 
     const link = document.createElement('a');
     link.href = fileUrl;
-    link.target = '_blank'; 
-    link.download = 'me.jpg'; 
+    link.target = '_blank';
+    link.download = 'me.jpg';
 
     document.body.appendChild(link);
     link.click();
@@ -48,7 +48,7 @@ export default function Intro() {
   };
 
   return (
-    <section id="home" className="flex items-center justify-center h-screen">
+    <section id="home" className="flex items-center justify-center h-screen bg-intro-image bg-cover bg-no-repeat bg-center">
       <Card>
         <CardHeader>
           <CardTitle className="flex justify-center text-4xl">I'm Pedro Azevedo</CardTitle>
@@ -73,7 +73,7 @@ export default function Intro() {
                 title: 'Downloading Resume',
                 description: new Date().toLocaleString(),
               });
-              downloadResume()
+              downloadResume();
             }}
           >
             <IoDownload className="mr-2" /> Resume
