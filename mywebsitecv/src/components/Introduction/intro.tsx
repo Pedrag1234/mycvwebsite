@@ -55,7 +55,7 @@ export default function Intro() {
     >
       <Card className="bg-primary opacity-95 mx-6">
         <CardHeader>
-          <CardTitle className="flex justify-center text-5xl text-white">I'm Pedro Azevedo</CardTitle>
+          <CardTitle className="flex justify-center text-5xl text-white">I&apos;m Pedro Azevedo</CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col space-y-4">
           <p className="flex justify-center text-white">

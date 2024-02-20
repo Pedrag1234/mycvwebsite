@@ -14,7 +14,7 @@ export default function Contacts() {
   return (
     <section id="contacts" className="bg-primary w-full border-b md:border-0">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-semibold pt-6 mb-6 text-white">Let's get in touch</h2>
+        <h2 className="text-3xl font-semibold pt-6 mb-6 text-white">Let&apos;s get in touch</h2>
         <div className="max-w-md pb-6 pl-6">
           {contacts.map((contact, idy) => (
             <div className="flex items-center mb-4" key={idy}>
