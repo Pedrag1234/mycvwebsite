@@ -70,7 +70,7 @@ const config = {
       backgroundImage: {
         'intro-image': "url('../img/intro.jpg')",
         'website-pattern': "url('../img/background.png')",
-      }
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],

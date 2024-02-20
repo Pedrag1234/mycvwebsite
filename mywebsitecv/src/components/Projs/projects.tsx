@@ -65,11 +65,14 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
-  <Card className='transform transition duration-500 hover:scale-110 max-w-[450px]' onClick={() => window.location.href = project.link}>
+  <Card
+    className="transform transition duration-500 hover:scale-110 max-w-[450px]"
+    onClick={() => (window.location.href = project.link)}
+  >
     <CardHeader>
       <HoverCard>
         <HoverCardTrigger asChild>
-          <Button variant="link" className='text-lg font-bold'>
+          <Button variant="link" className="text-lg font-bold">
             <Link href={project.link}>{project.title}</Link>
           </Button>
         </HoverCardTrigger>
@@ -89,7 +92,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
     </CardHeader>
     <CardContent className="flex flex-col items-center justify-center">
       <div className="flex justify-center items-center">
-        <Image src="/images/me.jpg" alt="Image" className="rounded-md" width={300} height={300} layout="fixed" />
+        <Image
+          src={project.img}
+          alt="Image"
+          className="rounded-md w-auto h-auto"
+          width={300}
+          height={300}
+          layout="fixed"
+        />
       </div>
       <div className="flex flex-wrap justify-center items-center space-x-2 max-w-[300px] mt-4">
         {project.badges.map((badge, index) => (
@@ -119,31 +129,31 @@ export default function Projects() {
     {
       title: 'Resource-probe',
       desc: 'Tool developed for my Masters Thesis to collecting resource usage(energy,memory,etc)',
-      img: 'test',
+      img: '/images/github.png',
       badges: [getBadge('Python'), getBadge('C'), getBadge('C++'), getBadge('Java'), getBadge('Makefile')],
-      link: 'https://www.google.com/',
-      link_img: 'src',
+      link: 'https://github.com/bernas670/resource-probe',
+      link_img: 'https://avatars.githubusercontent.com/u/24899230?v=4',
     },
     {
       title: 'Jeronimo',
-      desc: '3D Game Developed during Game Classes',
-      img: 'test',
+      desc: '3D Game Developed during Game Dev Class',
+      img: '/images/jeronimo.png',
       badges: [getBadge('Unity'), getBadge('C#')],
-      link: 'https://www.google.com/',
-      link_img: 'src',
+      link: 'https://guilhermesgama.itch.io/jeronimo',
+      link_img: 'https://pedrag1234.itch.io/static/images/frog-blue.png',
     },
     {
       title: 'Race to the Space',
-      desc: '2D Game Developed during Game Classes',
-      img: 'test',
+      desc: '2D Game Developed during Game Dev Class',
+      img: '/images/race2space.png',
       badges: [getBadge('Unity'), getBadge('C#')],
-      link: 'https://www.google.com/',
-      link_img: 'src',
+      link: 'https://pedrag1234.itch.io/race-to-the-space',
+      link_img: 'https://pedrag1234.itch.io/static/images/frog-blue.png',
     },
     {
       title: 'Website Cv',
       desc: 'The current website',
-      img: 'test',
+      img: '/images/github.png',
       badges: [
         getBadge('Typescript'),
         getBadge('React'),
@@ -153,7 +163,7 @@ export default function Projects() {
         getBadge('HTML'),
       ],
       link: 'https://www.google.com/',
-      link_img: 'src',
+      link_img: 'https://avatars.githubusercontent.com/u/24899230?v=4',
     },
   ];
 

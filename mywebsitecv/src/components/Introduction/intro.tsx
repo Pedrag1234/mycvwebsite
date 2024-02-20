@@ -48,26 +48,41 @@ export default function Intro() {
   };
 
   return (
-    <section id="home" className="flex items-center justify-center h-screen bg-intro-image bg-cover bg-no-repeat bg-center">
-      <Card>
+    <section
+      id="home"
+      className="flex items-center justify-center h-screen bg-intro-image bg-cover bg-no-repeat bg-center"
+    >
+      <Card className="bg-primary opacity-95 mx-6">
         <CardHeader>
-          <CardTitle className="flex justify-center text-4xl">I'm Pedro Azevedo</CardTitle>
+          <CardTitle className="flex justify-center text-5xl text-white">I'm Pedro Azevedo</CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col space-y-4">
-          <p className="flex justify-center">
+          <p className="flex justify-center text-white">
             I am a Porto based software engineer and game dev currently looking for work.
           </p>
-          <p className="flex justify-center">
+          <p className="flex justify-center text-white">
             In my free time, I enjoy doing some reading, playing video games, and going to the gym.
           </p>
           <div className="flex justify-center space-x-16">
-            <FaGithub size={24} />
-            <FaLinkedin size={24} />
+            <a
+              href="https://github.com/Pedrag1234"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size={24} color="white" className="hover:fill-gray-400" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pedro-azevedo-8723952a3/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin size={24} color="white" className="hover:fill-gray-400"/>
+            </a>
           </div>
         </CardContent>
         <CardFooter className="flex justify-center">
           <Button
-            className="flex items-center mr-4"
+            className="flex items-center mr-4 bg-sky-950 hover:bg-sky-900"
             onClick={() => {
               toast({
                 title: 'Downloading Resume',
@@ -78,7 +93,7 @@ export default function Intro() {
           >
             <IoDownload className="mr-2" /> Resume
           </Button>
-          <Button className="flex items-center">
+          <Button className="flex items-center bg-sky-950 hover:bg-sky-900">
             <Link href="#contacts" onClick={handleScroll} className="flex items-center">
               <FaPhone className="mr-2" /> Contacts
             </Link>

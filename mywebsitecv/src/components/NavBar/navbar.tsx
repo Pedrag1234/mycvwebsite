@@ -45,7 +45,7 @@ export default function Navbar() {
         <div className="flex items-left justify-between py-3 md:py-5 md:block">
           <div className="md:hidden">
             <button
-              className="text-white outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+              className="text-white outline-none p-2 rounded-md hover:text-gray-400"
               onClick={() => setState(!state)}
             >
               <Menu />
