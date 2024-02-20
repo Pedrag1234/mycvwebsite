@@ -78,7 +78,14 @@ export default function AboutMe() {
         <div className="mx-auto flex flex-col md:flex-row items-start flex-shrink-0">
           <div className="basis-1/4 mb-4 mt-4 md:mb-0 relative w-full md:w-1/2 order-1 md:order-1">
             <div className="aspect-w-3 aspect-h-3 min-w-[300px] min-h-[300px] flex justify-center items-center">
-              <Image src="/images/me.jpg" alt="Image" className="rounded-full" width={300} height={300} layout="fixed" />
+              <Image
+                src="/images/me.jpg"
+                alt="Image"
+                className="rounded-full"
+                width={300}
+                height={300}
+                layout="fixed"
+              />
             </div>
           </div>
 

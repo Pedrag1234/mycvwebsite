@@ -66,13 +66,13 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
   <Card
-    className="transform transition duration-500 hover:scale-110 max-w-[450px]"
+    className="bg-primary transform transition duration-500 hover:scale-110 max-w-[300px]"
     onClick={() => (window.location.href = project.link)}
   >
     <CardHeader>
       <HoverCard>
         <HoverCardTrigger asChild>
-          <Button variant="link" className="text-lg font-bold">
+          <Button variant="link" className="text-white text-lg font-bold">
             <Link href={project.link}>{project.title}</Link>
           </Button>
         </HoverCardTrigger>
@@ -91,7 +91,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
       </HoverCard>
     </CardHeader>
     <CardContent className="flex flex-col items-center justify-center">
-      <div className="flex justify-center items-center">
+      <div className="bg-white rounded-lg flex justify-center items-center">
         <Image
           src={project.img}
           alt="Image"
@@ -101,7 +101,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
           layout="fixed"
         />
       </div>
-      <div className="flex flex-wrap justify-center items-center space-x-2 max-w-[300px] mt-4">
+      <div className="flex flex-wrap justify-start content-start items-left space-x-2 max-w-[250px] mt-4">
         {project.badges.map((badge, index) => (
           <Badge key={index} title={badge.title} color={badge.color} />
         ))}
@@ -168,7 +168,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projs" className="p-8">
+    <section id="projs" className="m-16 ">
       <h2 className="text-center text-3xl font-semibold pt-6 mb-6 text-white">My Projects</h2>
       <ProjsSection projects={projects} />
     </section>

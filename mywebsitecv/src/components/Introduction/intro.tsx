@@ -7,6 +7,7 @@ import { useToast } from '@/components/ui/use-toast';
 
 import { IoDownload } from 'react-icons/io5';
 import { FaPhone, FaGithub, FaLinkedin } from 'react-icons/fa';
+
 import Link from 'next/link';
 import React from 'react';
 
@@ -64,19 +65,11 @@ export default function Intro() {
             In my free time, I enjoy doing some reading, playing video games, and going to the gym.
           </p>
           <div className="flex justify-center space-x-16">
-            <a
-              href="https://github.com/Pedrag1234"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://github.com/Pedrag1234" target="_blank" rel="noopener noreferrer">
               <FaGithub size={24} color="white" className="hover:fill-gray-400" />
             </a>
-            <a
-              href="https://www.linkedin.com/in/pedro-azevedo-8723952a3/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin size={24} color="white" className="hover:fill-gray-400"/>
+            <a href="https://www.linkedin.com/in/pedro-azevedo-8723952a3/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={24} color="white" className="hover:fill-gray-400" />
             </a>
           </div>
         </CardContent>
