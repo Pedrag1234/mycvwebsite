@@ -75,7 +75,7 @@ export default function Intro() {
         </CardContent>
         <CardFooter className="flex justify-center flex-col md:flex-row">
           <Button
-            className="flex items-center md:mr-4 md:mb-0 mb-2 w-40 bg-sky-950 hover:bg-sky-900"
+            className="flex items-center md:mr-4 md:mb-0 mb-2 w-40 bg-sky-600 hover:bg-sky-500"
             onClick={() => {
               toast({
                 title: 'Downloading Resume',
@@ -86,7 +86,7 @@ export default function Intro() {
           >
             <IoDownload className="mr-2" /> Resume
           </Button>
-          <Button className="flex items-center w-40 bg-sky-950 hover:bg-sky-900">
+          <Button className="flex items-center w-40 bg-sky-600 hover:bg-sky-500">
             <Link href="#contacts" onClick={handleScroll} className="flex items-center">
               <FaPhone className="mr-2" /> Contacts
             </Link>
