@@ -55,16 +55,16 @@ export default function Intro() {
     >
       <Card className="bg-primary opacity-95 mx-6">
         <CardHeader>
-          <CardTitle className="flex justify-center text-5xl text-white">I&apos;m Pedro Azevedo</CardTitle>
+          <CardTitle className="flex justify-center text-3xl  text-white">I&apos;m Pedro Azevedo</CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col space-y-4">
-          <p className="flex justify-center text-white">
+          <p className="flex justify-center text-white text-sm md:text-base">
             I am a Porto based software engineer and game dev currently looking for work.
           </p>
-          <p className="flex justify-center text-white">
+          <p className="flex justify-center text-white text-sm md:text-base">
             In my free time, I enjoy doing some reading, playing video games, and going to the gym.
           </p>
-          <div className="flex justify-center space-x-16">
+          <div className="flex justify-center space-x-16 py-4">
             <a href="https://github.com/Pedrag1234" target="_blank" rel="noopener noreferrer">
               <FaGithub size={24} color="white" className="hover:fill-gray-400" />
             </a>
@@ -73,9 +73,9 @@ export default function Intro() {
             </a>
           </div>
         </CardContent>
-        <CardFooter className="flex justify-center">
+        <CardFooter className="flex justify-center flex-col md:flex-row">
           <Button
-            className="flex items-center mr-4 bg-sky-950 hover:bg-sky-900"
+            className="flex items-center md:mr-4 md:mb-0 mb-2 w-40 bg-sky-600 hover:bg-sky-500"
             onClick={() => {
               toast({
                 title: 'Downloading Resume',
@@ -86,7 +86,7 @@ export default function Intro() {
           >
             <IoDownload className="mr-2" /> Resume
           </Button>
-          <Button className="flex items-center bg-sky-950 hover:bg-sky-900">
+          <Button className="flex items-center w-40 bg-sky-600 hover:bg-sky-500">
             <Link href="#contacts" onClick={handleScroll} className="flex items-center">
               <FaPhone className="mr-2" /> Contacts
             </Link>
