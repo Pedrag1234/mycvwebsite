@@ -64,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
       style={{ backgroundImage: `url(${project.img})`, backgroundSize: 'cover', minHeight: '350px' }}
     >
       <div
-        className="pt-4 bg-black bg-opacity-20 min-h-150 min-w-150 h-full px-10 flex flex-col flex-grow justify-start hover:bg-opacity-75 transition duration-300"
+        className="pt-4 bg-black bg-opacity-20 min-h-150 min-w-150 h-full px-10 flex flex-col flex-grow justify-start transition duration-300"
         style={{ minHeight: 'inherit' }}
       >
         <h2 className="text-white text-3xl mb-2 flex items-center transform translate-y-0 group-hover:translate-y-2 duration-300">
