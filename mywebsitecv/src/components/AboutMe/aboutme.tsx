@@ -94,9 +94,9 @@ export default function AboutMe() {
               From my earliest years, a fervent passion for video games and computers ignited within me, steering my
               journey towards becoming a game and software developer today. Despite my relative lack of experience, I
               confidently characterize my programming skills and principles as robust. Fueled by a natural aptitude for
-              problem-solving, I&apos;ve honed the craft of a capable programmer. The prospect of creating groundbreaking
-              software and games fills me with anticipation, and I am eager to contribute to the realm of innovation in
-              this dynamic field.
+              problem-solving, I&apos;ve honed the craft of a capable programmer. The prospect of creating
+              groundbreaking software and games fills me with anticipation, and I am eager to contribute to the realm of
+              innovation in this dynamic field.
             </p>
 
             <InfoSection infos={infos} />

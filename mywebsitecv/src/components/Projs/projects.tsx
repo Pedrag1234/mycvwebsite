@@ -5,14 +5,6 @@ import Badge from './badge';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
-import { Button } from '@/components/ui/button';
-
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
-
-import Image from 'next/image';
-import Link from 'next/link';
-import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
-
 const Badges = new Map<string, string>([
   ['C#', '#68217A'],
   ['C++', '#6495ED'],
@@ -65,49 +57,34 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
-  <Card
-    className="bg-primary transform transition duration-500 hover:scale-110 max-w-[300px]"
-    onClick={() => (window.location.href = project.link)}
-  >
-    <CardHeader>
-      <HoverCard>
-        <HoverCardTrigger asChild>
-          <Button variant="link" className="text-white text-lg font-bold">
-            <Link href={project.link}>{project.title}</Link>
-          </Button>
-        </HoverCardTrigger>
-        <HoverCardContent className="max-w-xs">
-          <div className="flex justify-between space-x-4">
-            <Avatar>
-              <AvatarImage src={project.link_img} />
-              <AvatarFallback>VC</AvatarFallback>
-            </Avatar>
-            <div className="space-y-1">
-              <h4 className="text-sm font-semibold">{project.title}</h4>
-              <p className="text-sm">{project.desc}</p>
-            </div>
-          </div>
-        </HoverCardContent>
-      </HoverCard>
-    </CardHeader>
-    <CardContent className="flex flex-col items-center justify-center">
-      <div className="bg-white rounded-lg flex justify-center items-center">
-        <Image
-          src={project.img}
-          alt="Image"
-          className="rounded-md w-auto h-auto"
-          width={300}
-          height={300}
-          layout="fixed"
-        />
+  <a href={project.link}>
+    <div className="bg-white min-w-370 cursor-pointer group">
+    <article
+      className="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 relative"
+      style={{ backgroundImage: `url(${project.img})`, backgroundSize: 'cover', minHeight: '350px' }}
+    >
+      <div
+        className="pt-4 bg-black bg-opacity-20 min-h-150 min-w-150 h-full px-10 flex flex-col flex-grow justify-start hover:bg-opacity-75 transition duration-300"
+        style={{ minHeight: 'inherit' }}
+      >
+        <h2 className="text-white text-3xl mb-2 flex items-center transform translate-y-0 group-hover:translate-y-2 duration-300">
+          <Avatar>
+            <AvatarImage src={project.link_img} />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+          <span className="ml-2">{project.title}</span>
+        </h2>
+        <div className="w-16 h-2 bg-blue-500 rounded-full mb-2 transform translate-y-0 group-hover:translate-y-2 duration-300"></div>
+        <p className="opacity-0 text-white text-l group-hover:opacity-80 transform duration-300">{project.desc}</p>
       </div>
-      <div className="flex flex-wrap justify-start content-start items-left space-x-2 max-w-[250px] mt-4">
+      <div className="mx-auto flex flex-wrap justify-center items-end bg-black bg-opacity-20 pb-2">
         {project.badges.map((badge, index) => (
           <Badge key={index} title={badge.title} color={badge.color} />
         ))}
       </div>
-    </CardContent>
-  </Card>
+    </article>
+  </div>
+  </a>
 );
 
 interface ProjsSectionProps {
@@ -116,7 +93,7 @@ interface ProjsSectionProps {
 
 const ProjsSection: React.FC<ProjsSectionProps> = ({ projects }) => (
   <div className="projects-container flex justify-center">
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-2 gap-8 lg:mx-8 max-w-[1600px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       {projects.map((project, index) => (
         <ProjectCard key={index} project={project} />
       ))}
@@ -154,14 +131,7 @@ export default function Projects() {
       title: 'Website Cv',
       desc: 'The current website',
       img: '/images/github.png',
-      badges: [
-        getBadge('Typescript'),
-        getBadge('React'),
-        getBadge('Next.js'),
-        getBadge('Tailwind CSS'),
-        getBadge('CSS'),
-        getBadge('HTML'),
-      ],
+      badges: [getBadge('Typescript'), getBadge('React'), getBadge('Next.js'), getBadge('Tailwind CSS')],
       link: 'https://www.google.com/',
       link_img: 'https://avatars.githubusercontent.com/u/24899230?v=4',
     },
