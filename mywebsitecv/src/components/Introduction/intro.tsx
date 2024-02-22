@@ -51,7 +51,7 @@ export default function Intro() {
   return (
     <section
       id="home"
-      className="flex items-center justify-center h-screen bg-intro-image bg-cover bg-no-repeat bg-center"
+      className="flex items-center justify-center h-screen bg-intro-image bg-center"
     >
       <Card className="bg-primary opacity-95 mx-6">
         <CardHeader>

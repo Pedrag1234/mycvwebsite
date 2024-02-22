@@ -13,7 +13,7 @@ export default function Home() {
       <NavBar />
       <Intro />
       <AboutMe />
-      <div className="bg-website-pattern bg-cover bg-no-repeat bg-center pt-12">
+      <div className="bg-intro-image bg-center pt-12">
         <Timeline />
         <Projects />
         <Contacts />
