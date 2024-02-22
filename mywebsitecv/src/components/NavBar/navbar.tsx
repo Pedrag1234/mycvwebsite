@@ -40,7 +40,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-primary w-full border-b md:border-0 sticky top-0 z-20">
+    <nav className="bg-fuchsia-900 border-fuchsia-900 w-full border-b md:border-0 sticky top-0 z-20">
       <div className="items-center px-4 max-w-screen-xl md:flex md:px-8">
         <div className="flex items-left justify-between py-3 md:py-5 md:block">
           <div className="md:hidden">

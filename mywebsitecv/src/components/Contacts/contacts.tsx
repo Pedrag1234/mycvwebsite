@@ -12,20 +12,20 @@ export default function Contacts() {
   ];
 
   return (
-    <section id="contacts" className="bg-primary w-full border-b md:border-0 ">
-      <div className="container mx-2 md:mx-auto">
-        <h2 className="text-base md:text-3xl font-semibold pt-6 mb-6 text-white">Let&apos;s get in touch</h2>
-        <div className="max-w-md pb-6 pl-2 md:pl-6">
-          {contacts.map((contact, idy) => (
-            <div className="flex items-center mb-4" key={idy}>
-              {contact.icon}
-              <p className="text-white ml-4 text-sm md:text-base">
-                <span className="font-bold">{contact.title}:</span> {contact.content}
-              </p>
-            </div>
-          ))}
+    <section id="contacts" className="bg-fuchsia-900 border-fuchsia-900 w-full border-b md:border-0">
+  <div className="container mx-auto text-center">
+    <h2 className="text-base md:text-3xl font-semibold pt-6 mb-6 text-white">Let&apos;s get in touch</h2>
+    <div className="max-w-md pb-6 pl-2 md:pl-6 mx-auto">
+      {contacts.map((contact, idy) => (
+        <div className="flex items-center mb-4" key={idy}>
+          {contact.icon}
+          <p className="text-white ml-4 text-sm md:text-base">
+            <span className="font-bold">{contact.title}:</span> {contact.content}
+          </p>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
   );
 }

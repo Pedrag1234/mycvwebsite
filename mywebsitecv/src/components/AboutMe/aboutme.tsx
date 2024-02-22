@@ -72,7 +72,7 @@ export default function AboutMe() {
   ];
 
   return (
-    <section id="about" className="bg-primary w-full border-b md:border-0">
+    <section id="about" className="bg-fuchsia-900 border-fuchsia-900 border w-full border-b md:border-0">
       <div className="container mx-auto">
         <h2 className="text-center text-3xl font-semibold pt-6 mb-6 text-white">About Me</h2>
         <div className="mx-auto flex flex-col md:flex-row items-start flex-shrink-0">

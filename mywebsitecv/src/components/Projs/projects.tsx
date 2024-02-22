@@ -8,19 +8,19 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 const Badges = new Map<string, string>([
   ['C#', '#68217A'],
   ['C++', '#6495ED'],
-  ['C', '#CCCCCC'],
+  ['C', '#FF5733'], 
   ['Python', '#306998'],
   ['Java', '#f89820'],
   ['Typescript', '#007ACC'],
-  ['Unreal', '#007ACC'],
-  ['Unity', '#00539F'],
+  ['Unreal', '#FF8C00'], 
+  ['Unity', '#FF1493'], 
   ['Gamemaker', '#8B008B'],
   ['React', '#61DAFB'],
-  ['Next.js', '#000000'],
+  ['Next.js', '#00CED1'], 
   ['Tailwind CSS', '#06B6D4'],
   ['CSS', '#FF4500'],
   ['HTML', '#E34F26'],
-  ['Makefile', '#00AEEF'],
+  ['Makefile', '#32CD32'], 
 ]);
 
 interface Badge {
@@ -74,8 +74,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
             </Avatar>
             <span className="ml-2">{project.title}</span>
           </h2>
-          <div className="w-16 h-2 bg-blue-500 rounded-full mb-2 transform translate-y-0 group-hover:translate-y-2 duration-300"></div>
-          <p className="opacity-0 pt-4 text-white text-sm md:text-l group-hover:opacity-80 transform duration-300">
+          <div className="w-16 h-2 bg-fuchsia-900 rounded-full mb-2 transform translate-y-0 group-hover:translate-y-2 duration-300"></div>
+          <p className="opacity-0 pt-4 text-neutral-50 font-bold text-sm md:text-l group-hover:opacity-80 transform duration-300">
             {project.desc}
           </p>
         </div>
@@ -108,10 +108,10 @@ export default function Projects() {
     {
       title: 'Resource-probe',
       desc: 'Tool developed for my Masters Thesis to collecting resource usage (energy, memory, etc)',
-      img: '/images/github.png',
+      img: '/images/code.jpg',
       badges: [getBadge('Python'), getBadge('C'), getBadge('C++'), getBadge('Java'), getBadge('Makefile')],
       link: 'https://github.com/bernas670/resource-probe',
-      link_img: 'https://avatars.githubusercontent.com/u/24899230?v=4',
+      link_img: 'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png',
     },
     {
       title: 'Jeronimo',
@@ -119,7 +119,7 @@ export default function Projects() {
       img: '/images/jeronimo.png',
       badges: [getBadge('Unity'), getBadge('C#')],
       link: 'https://guilhermesgama.itch.io/jeronimo',
-      link_img: 'https://pedrag1234.itch.io/static/images/frog-blue.png',
+      link_img: 'https://static.itch.io/images/app-icon.svg',
     },
     {
       title: 'Race to the Space',
@@ -127,7 +127,7 @@ export default function Projects() {
       img: '/images/race2space.png',
       badges: [getBadge('Unity'), getBadge('C#')],
       link: 'https://pedrag1234.itch.io/race-to-the-space',
-      link_img: 'https://pedrag1234.itch.io/static/images/frog-blue.png',
+      link_img: 'https://static.itch.io/images/app-icon.svg',
     },
     {
       title: 'Website Cv',
@@ -135,13 +135,13 @@ export default function Projects() {
       img: '/images/github.png',
       badges: [getBadge('Typescript'), getBadge('React'), getBadge('Next.js'), getBadge('Tailwind CSS')],
       link: 'https://www.google.com/',
-      link_img: 'https://avatars.githubusercontent.com/u/24899230?v=4',
+      link_img: 'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png',
     },
   ];
 
   return (
     <section id="projs" className="m-12 sm:m-2">
-      <h2 className="text-center text-3xl font-semibold pt-6 mb-6 text-white">My Projects</h2>
+      <h2 className="text-center text-3xl font-semibold pt-8 pb-8 md:pt-12 md:pb-12 mb-6 text-white">My Projects</h2>
       <ProjsSection projects={projects} />
     </section>
   );
