@@ -12,7 +12,7 @@ export default function Footer() {
           <FaLinkedin size={24} color="white" className="hover:fill-gray-400" />
         </a>
       </div>
-      <p className="flex justify-center pt-2 text-white">Made by Pedro Azevedo</p>
+      <p className="flex justify-center pt-2 text-white text-xs md:text-base">Made by Pedro Azevedo</p>
       <div className="flex flex-col items-center">
         <p className="text-white text-xs mt-6">Using:</p>
         <div className="flex justify-center space-x-8 mt-4 ml-2">

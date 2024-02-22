@@ -5,7 +5,7 @@
 }
 
 .timeline-container::after {
-  background-color: #0059b3;
+  background-color: #701A75;
   content: '';
   position: absolute;
   left: calc(50% - 2px);
@@ -38,7 +38,7 @@
   align-items: flex-end;
   padding: 15px;
   position: relative;
-  width: 400px;
+  width: 500px;
   max-width: 100%;
   text-align: right;
 }
@@ -88,6 +88,7 @@
   color: #777;
   font-size: 12px;
   font-weight: bold;
+  padding-top: 20px;
 }
 
 .timeline-item-content h2 {
@@ -114,7 +115,7 @@
 
 .timeline-item-content .circle {
   background-color: #fff;
-  border: 3px solid #0059b3;
+  border: 3px solid #701A75;
   border-radius: 50%;
   position: absolute;
   top: calc(50% - 10px);
