@@ -21,6 +21,7 @@ const Badges = new Map<string, string>([
   ['CSS', '#FF4500'],
   ['HTML', '#E34F26'],
   ['Makefile', '#32CD32'], 
+  ['Dissertation', '#990000'], 
 ]);
 
 interface Badge {
@@ -106,6 +107,14 @@ const ProjsSection: React.FC<ProjsSectionProps> = ({ projects }) => (
 export default function Projects() {
   const projects: Project[] = [
     {
+      title: 'Masters Thesis',
+      desc: 'My thesis about ranking compiler/interpreter versions by energy efficiency',
+      img: '/images/dissertation.jpg',
+      badges: [getBadge('Dissertation'),],
+      link: 'https://hdl.handle.net/10216/152072',
+      link_img: 'https://sigarra.up.pt/feup/WEB_GESSI_DOCS.download_file?p_name=F1323763649/minerva_new.jpg',
+    },
+    {
       title: 'Resource-probe',
       desc: 'Tool developed for my Masters Thesis to collecting resource usage (energy, memory, etc)',
       img: '/images/code.jpg',
@@ -131,10 +140,10 @@ export default function Projects() {
     },
     {
       title: 'Website Cv',
-      desc: 'The current website',
-      img: '/images/github.png',
+      desc: 'My personal page, made with Next.js, Typescript and Tailwind CSS',
+      img: '/images/next.jpg',
       badges: [getBadge('Typescript'), getBadge('React'), getBadge('Next.js'), getBadge('Tailwind CSS')],
-      link: 'https://www.google.com/',
+      link: 'https://github.com/Pedrag1234/mycvwebsite',
       link_img: 'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png',
     },
   ];
