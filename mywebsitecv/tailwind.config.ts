@@ -69,7 +69,6 @@ const config = {
       },
       backgroundImage: {
         'intro-image': "url('../img/intro4.jpg')",
-        'website-pattern': "url('../img/background.png')",
       },
     },
   },
