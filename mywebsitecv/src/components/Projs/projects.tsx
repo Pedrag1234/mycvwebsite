@@ -74,8 +74,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
             </Avatar>
             <span className="ml-2">{project.title}</span>
           </h2>
-          <div className="w-16 h-2 bg-fuchsia-900 rounded-full mb-2 transform translate-y-0 group-hover:translate-y-2 duration-300"></div>
-          <p className="opacity-0 pt-4 text-neutral-50 font-bold text-sm md:text-l group-hover:opacity-80 transform duration-300">
+          <div className="w-16 h-2 bg-indigo-600 rounded-full mb-2 transform translate-y-0 group-hover:translate-y-2 duration-300"></div>
+          <p className="opacity-0 pt-4 text-white font-bold text-sm md:text-l group-hover:opacity-100 transform duration-300">
             {project.desc}
           </p>
         </div>

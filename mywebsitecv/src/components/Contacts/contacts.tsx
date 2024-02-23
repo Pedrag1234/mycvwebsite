@@ -12,7 +12,7 @@ export default function Contacts() {
   ];
 
   return (
-    <section id="contacts" className="bg-fuchsia-900 border-fuchsia-900 w-full border-b md:border-0">
+    <section id="contacts" className="bg-gradient-to-b to-violet-600 from-indigo-600 border-t-indigo-600 border-b-violet-600 w-full border-b md:border-0 shadow-md shadow-indigo-600">
   <div className="container mx-auto text-center">
     <h2 className="text-base md:text-3xl font-semibold pt-6 mb-6 text-white">Let&apos;s get in touch</h2>
     <div className="max-w-md pb-6 pl-2 md:pl-6 mx-auto">

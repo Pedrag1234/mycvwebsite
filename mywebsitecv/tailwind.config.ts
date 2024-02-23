@@ -68,7 +68,7 @@ const config = {
         'accordion-up': 'accordion-up 0.3s ease-out',
       },
       backgroundImage: {
-        'intro-image': "url('../img/intro.jpg')",
+        'intro-image': "url('../img/intro4.jpg')",
         'website-pattern': "url('../img/background.png')",
       },
     },

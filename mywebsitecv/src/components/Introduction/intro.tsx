@@ -51,9 +51,9 @@ export default function Intro() {
   return (
     <section
       id="home"
-      className="flex items-center justify-center h-screen bg-intro-image bg-center"
+      className="flex items-center justify-center h-screen"
     >
-      <Card className="bg-primary/60  mx-6">
+      <Card className="bg-indigo-500/30 border-indigo-500/30 shadow-md shadow-violet-600 mx-6">
         <CardHeader>
           <CardTitle className="flex justify-center text-3xl  text-white">I&apos;m Pedro Azevedo</CardTitle>
         </CardHeader>
@@ -75,7 +75,7 @@ export default function Intro() {
         </CardContent>
         <CardFooter className="flex justify-center flex-col md:flex-row">
           <Button
-            className="flex items-center md:mr-4 md:mb-0 mb-2 w-40 bg-fuchsia-700 hover:bg-fuchsia-500"
+            className="flex items-center md:mr-4 md:mb-0 mb-2 w-40 bg-indigo-600 hover:bg-indigo-500"
             onClick={() => {
               toast({
                 title: 'Downloading Resume',
@@ -86,7 +86,7 @@ export default function Intro() {
           >
             <IoDownload size={19} className="mr-2" /> Resume
           </Button>
-          <Button className="flex items-center w-40 bg-fuchsia-700 hover:bg-fuchsia-500">
+          <Button className="flex items-center w-40 bg-indigo-600 hover:bg-indigo-500">
             <Link href="#contacts" onClick={handleScroll} className="flex items-center">
               <FaPhone className="mr-2" /> Contacts
             </Link>

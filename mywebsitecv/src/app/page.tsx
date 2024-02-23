@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <Intro />
-      <AboutMe />
-      <div className="bg-intro-image bg-center pt-12">
+      <div className="bg-intro-image bg-center bg-cover bg-fixed pt-12">
+        <Intro />
+        <AboutMe />
         <Timeline />
         <Projects />
         <Contacts />
