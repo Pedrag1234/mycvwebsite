@@ -16,11 +16,11 @@ interface Info {
 
 const InfoCard: React.FC<Info> = ({ title, desc, icon }) => (
   <div className="px-6 mb-4 w-full max-w-md">
-    <strong className="flex items-center font-mono text-sm md:text-base" style={{ color: '#ff83cf' }}>
+    <strong className="flex items-center font-roboto text-sm md:text-base" style={{ color: '#ff83cf' }}>
       {icon && <span className="mr-2">{icon}</span>}
       {title}
     </strong>
-    <div className="emoji-list-container font-mono text-sm md:text-base">{desc}</div>
+    <div className="emoji-list-container font-roboto text-sm md:text-base">{desc}</div>
   </div>
 );
 
@@ -74,7 +74,7 @@ export default function AboutMe() {
   return (
     <section id="about" className="bg-indigo-500/30 border-indigo-500/30 w-full border-b md:border-0 shadow-md">
       <div className="container mx-auto">
-        <h2 className="text-center text-3xl font-semibold pt-6 mb-6 text-white font-mono">About Me</h2>
+        <h2 className="text-center text-3xl font-semibold pt-6 mb-6 text-white font-roboto">About Me</h2>
         <div className="mx-auto flex flex-col md:flex-row items-start flex-shrink-0">
           <div className="basis-1/4 mb-4 mt-4 md:mb-0 relative w-full md:w-1/2 order-1 md:order-1">
             <div className="aspect-w-3 aspect-h-3 md:min-w-[300px] md:min-h-[300px] flex justify-center items-center">
@@ -90,7 +90,7 @@ export default function AboutMe() {
           </div>
 
           <div className="md:pl-16 max-w-[800px] basis-3/4 ml-4 mt-4 md:w-1/2 text-white overflow-hidden order-2 md:order-2">
-            <p className="text-white font-mono text-sm md:text-base">
+            <p className="text-white font-roboto text-sm md:text-base">
               From my earliest years, a fervent passion for video games and computers ignited within me, steering my
               journey towards becoming a game and software developer today. Despite my relative lack of experience, I
               confidently characterize my programming skills and principles as robust. Fueled by a natural aptitude for

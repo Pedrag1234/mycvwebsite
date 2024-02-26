@@ -68,7 +68,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
           className="pt-4 bg-black bg-opacity-20 min-h-150 md:min-h-350 h-full px-4 md:px-6 flex flex-col flex-grow justify-start transition duration-300"
           style={{ minHeight: 'inherit' }}
         >
-          <h2 className="text-white text-xl font-mono md:text-3xl mb-2 flex items-center transform translate-y-0 group-hover:translate-y-2 duration-300">
+          <h2 className="text-white text-xl font-roboto md:text-3xl mb-2 flex items-center transform translate-y-0 group-hover:translate-y-2 duration-300">
             <Avatar>
               <AvatarImage src={project.link_img} />
               <AvatarFallback>CN</AvatarFallback>
@@ -76,7 +76,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
             <span className="ml-2">{project.title}</span>
           </h2>
           <div className="w-16 h-2 bg-indigo-600 rounded-full mb-2 transform translate-y-0 group-hover:translate-y-2 duration-300"></div>
-          <p className="opacity-0 pt-4 text-white font-mono font-bold text-sm md:text-l group-hover:opacity-100 transform duration-300">
+          <p className="opacity-0 pt-4 text-white font-roboto font-bold text-sm md:text-l group-hover:opacity-100 transform duration-300">
             {project.desc}
           </p>
         </div>

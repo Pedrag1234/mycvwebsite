@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss';
 
+
 const config = {
   darkMode: ['class'],
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
@@ -13,6 +14,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        'roboto': ['Roboto'],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
