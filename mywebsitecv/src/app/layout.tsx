@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Pedro Azevedo Website CV',
   description: 'A CV website for Pedro Azevedo created using Next.js and shadcn/ui',
+  icons: {
+    icon: 'favicon.png'
+  }
 };
 
 export default function RootLayout({
