@@ -13,12 +13,12 @@ interface Event {
 const TimelineItem: React.FC<Event> = ({ title, desc, date, category }) => (
   <div className="timeline-item">
     <div className="timeline-item-content">
-      <span className="tag" style={{ background: category.color }}>
+      <span className="tag " style={{ background: category.color }}>
         {category.tag}
       </span>
       <time>{date}</time>
-      <h2>{title}</h2>
-      <p>{desc}</p>
+      <h2 className='font-roboto'>{title}</h2>
+      <p className='font-roboto'>{desc}</p>
       <span className="circle" />
     </div>
   </div>

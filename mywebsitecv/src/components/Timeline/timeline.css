@@ -67,6 +67,7 @@
 }
 
 .timeline-item-content .tag {
+  margin: 8px;
   color: #fff;
   font-size: 12px;
   font-weight: bold;

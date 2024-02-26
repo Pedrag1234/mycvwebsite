@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Pedro Azevedo Website CV',
   description: 'A CV website for Pedro Azevedo created using Next.js and shadcn/ui',
+  icons: {
+    icon: 'favicon.png'
+  }
 };
 
 export default function RootLayout({
@@ -19,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+      </head>
       <body className={inter.className}>
         <main>{children}</main>
         <Toaster />
