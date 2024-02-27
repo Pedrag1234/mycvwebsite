@@ -3,7 +3,7 @@ import { SiNextdotjs, SiReact, SiTailwindcss } from 'react-icons/si';
 
 export default function Footer() {
   return (
-    <footer id="footer" className="w-full border-b md:border-0 pt-6 pb-6 font-roboto">
+    <footer id="footer" className="w-full border-b md:border-0 pt-6 pb-6 font-ubuntu">
       <div className="flex justify-center space-x-16">
         <a href="https://github.com/Pedrag1234" target="_blank" rel="noopener noreferrer">
           <FaGithub size={24} color="white" className="hover:fill-gray-400" />
