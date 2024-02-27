@@ -15,7 +15,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        'roboto': ['Roboto'],
+        'ubuntu': ['Ubuntu'],
       },
       colors: {
         border: 'hsl(var(--border))',

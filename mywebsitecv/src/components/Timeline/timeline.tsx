@@ -17,8 +17,8 @@ const TimelineItem: React.FC<Event> = ({ title, desc, date, category }) => (
         {category.tag}
       </span>
       <time>{date}</time>
-      <h2 className='font-roboto'>{title}</h2>
-      <p className='font-roboto'>{desc}</p>
+      <h2 className='font-ubuntu'>{title}</h2>
+      <p className='font-ubuntu'>{desc}</p>
       <span className="circle" />
     </div>
   </div>
