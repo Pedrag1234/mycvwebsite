@@ -65,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
         style={{ backgroundImage: `url(${project.img})`, backgroundSize: 'cover', minHeight: '350px' }}
       >
         <div
-          className="pt-4 bg-black bg-opacity-20 min-h-150 md:min-h-350 h-full px-4 md:px-6 flex flex-col flex-grow justify-start transition duration-300"
+          className="pt-4 bg-black bg-opacity-40 min-h-150 md:min-h-350 h-full px-4 md:px-6 flex flex-col flex-grow justify-start transition duration-300"
           style={{ minHeight: 'inherit' }}
         >
           <h2 className="text-white text-xl font-ubuntu md:text-3xl mb-2 flex items-center transform translate-y-0 group-hover:translate-y-2 duration-300">
@@ -76,11 +76,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
             <span className="ml-2">{project.title}</span>
           </h2>
           <div className="w-16 h-2 bg-indigo-600 rounded-full mb-2 transform translate-y-0 group-hover:translate-y-2 duration-300"></div>
-          <p className="opacity-0 pt-4 text-white font-ubuntu font-bold text-sm md:text-l group-hover:opacity-100 transform duration-300">
+          <p className="opacity-0 pt-4 text-[#ffffff] font-ubuntu font-bold text-sm md:text-l group-hover:opacity-100 transform duration-300">
             {project.desc}
           </p>
         </div>
-        <div className="mx-auto flex flex-wrap justify-center items-end bg-black bg-opacity-20 pb-2">
+        <div className="mx-auto flex flex-wrap justify-center items-end bg-black bg-opacity-40 pb-2">
           {project.badges.map((badge, index) => (
             <Badge key={index} title={badge.title} color={badge.color} />
           ))}

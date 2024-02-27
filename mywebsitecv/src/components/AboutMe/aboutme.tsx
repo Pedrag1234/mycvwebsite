@@ -16,7 +16,7 @@ interface Info {
 
 const InfoCard: React.FC<Info> = ({ title, desc, icon }) => (
   <div className="px-6 mb-4 w-full max-w-md">
-    <strong className="flex items-center font-ubuntu text-sm md:text-base" style={{ color: '#ff83cf' }}>
+    <strong className="flex items-center font-ubuntu text-sm md:text-base" style={{ color: '#5A9EFF' }}>
       {icon && <span className="mr-2">{icon}</span>}
       {title}
     </strong>
