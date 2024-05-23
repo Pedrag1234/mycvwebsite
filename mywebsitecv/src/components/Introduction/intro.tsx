@@ -36,12 +36,12 @@ export default function Intro() {
   };
 
   const downloadResume = () => {
-    const fileUrl = '/images/';
+    const fileUrl = '/images/Pedro Azevedo CV.pdf';  // Updated path
 
     const link = document.createElement('a');
     link.href = fileUrl;
     link.target = '_blank';
-    link.download = 'me.jpg';
+    link.download = 'Pedro Azevedo CV.pdf';
 
     document.body.appendChild(link);
     link.click();

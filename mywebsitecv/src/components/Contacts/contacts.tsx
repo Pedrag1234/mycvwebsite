@@ -8,7 +8,6 @@ export default function Contacts() {
       content: 'pedro_miguel_azevedo@outlook.com',
       icon: <MdOutlineEmail style={{ color: 'white' }} />,
     },
-    //{ title: 'Phone', content: '(+351) 935-452-174', icon: <MdOutlinePhone style={{ color: 'white' }} /> },
   ];
 
   return (
