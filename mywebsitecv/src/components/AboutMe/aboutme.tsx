@@ -41,7 +41,7 @@ export default function AboutMe() {
     { title: 'Location:', desc: 'Porto, Matosinhos', icon: <FaLocationDot /> },
     { title: 'Nationality:', desc: 'Portuguese', icon: <FaFlag /> },
     { title: 'Study:', desc: 'University of Porto', icon: <FaUniversity /> },
-    { title: 'Age:', desc: "I'm 25", icon: <FaCalendarDay /> },
+    { title: 'Age:', desc: "I'm 26", icon: <FaCalendarDay /> },
     { title: 'Interests:', desc: 'Video Games, Books, Movies, Gym, Anime', icon: <FaStar /> },
     {
       title: 'Languages:',
@@ -79,7 +79,7 @@ export default function AboutMe() {
           <div className="basis-1/4 mb-4 mt-4 md:mb-0 relative w-full md:w-1/2 order-1 md:order-1">
             <div className="aspect-w-3 aspect-h-3 md:min-w-[300px] md:min-h-[300px] flex justify-center items-center">
               <Image
-                src="/images/me.jpg"
+                src="/images/me.png"
                 alt="Image"
                 className="rounded-full"
                 width={300}
@@ -90,17 +90,18 @@ export default function AboutMe() {
           </div>
 
           <div className="md:pl-16 max-w-[800px] basis-3/4 ml-4 mt-4 md:w-1/2 text-white overflow-hidden order-2 md:order-2">
-            <p className="text-white font-ubuntu text-sm md:text-base">
-              From my earliest years, a fervent passion for video games and computers ignited within me, steering my
-              journey towards becoming a game and software developer today. Despite my relative lack of experience, I
-              confidently characterize my programming skills and principles as robust. Fueled by a natural aptitude for
-              problem-solving, I&apos;ve honed the craft of a capable programmer. The prospect of creating
-              groundbreaking software and games fills me with anticipation, and I am eager to contribute to the realm of
-              innovation in this dynamic field.
-            </p>
-
-            <InfoSection infos={infos} />
-          </div>
+  <p className="text-white font-ubuntu text-base md:text-lg mb-4">
+    Hello! I&apos;m Pedro Azevedo, a dedicated and hardworking software engineer with a passion for problem-solving and programming. While I am still gaining work experience, I am committed to developing my skills and expanding my knowledge in the tech industry.
+  </p>
+  <p className="text-white font-ubuntu text-base md:text-lg mb-4">
+    My interests span both software development and video games, driving me to create innovative solutions and exciting projects. In my free time, I enjoy reading, playing video games, and staying active at the gym. These activities help me maintain a balanced lifestyle and keep my mind sharp.
+  </p>
+  <p className="text-white font-ubuntu text-base md:text-lg mb-4">
+    I am eager to take on new challenges that allow me to grow as a developer and as a person. I look forward to contributing to impactful projects and collaborating with like-minded professionals in the tech community. My ultimate goal is to develop new software and video games that make a difference.
+  </p>
+  
+  <InfoSection infos={infos} />
+</div>
         </div>
       </div>
     </section>
