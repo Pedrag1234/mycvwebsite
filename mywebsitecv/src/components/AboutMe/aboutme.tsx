@@ -79,7 +79,7 @@ export default function AboutMe() {
           <div className="basis-1/4 mb-4 mt-4 md:mb-0 relative w-full md:w-1/2 order-1 md:order-1">
             <div className="aspect-w-3 aspect-h-3 md:min-w-[300px] md:min-h-[300px] flex justify-center items-center">
               <Image
-                src="/images/me.png"
+                src="/images/me.jpg"
                 alt="Image"
                 className="rounded-full"
                 width={300}

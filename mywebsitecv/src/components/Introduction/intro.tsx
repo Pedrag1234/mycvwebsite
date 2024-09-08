@@ -59,7 +59,7 @@ export default function Intro() {
         </CardHeader>
         <CardContent className="flex flex-col space-y-4">
           <p className="flex justify-center text-white font-ubuntu text-sm md:text-base">
-            I am a Porto based software engineer and game dev currently looking for work.
+            I am a Porto based software engineer currently looking for work.
           </p>
           <p className="flex justify-center text-white font-ubuntu text-sm md:text-base">
             In my free time, I enjoy doing some reading, playing video games, and going to the gym.
