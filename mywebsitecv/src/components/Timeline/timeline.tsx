@@ -41,7 +41,7 @@ export default function Timeline() {
   const events: Event[] = [
     {
       title: 'Bachelors in Computer and Software Engineering',
-      desc: 'During this time, I developed the crucial skills to succeed as software and game developer , well the necessary soft skills to be competent and be  successful as team. I was able to surpass every academic and personal challenge, demonstrating both my commitment and resilience.',
+      desc: 'During this time, I developed the crucial skills to succeed as software engineer, as well as the necessary soft skills to be competent and be successful as team.',
       date: 'February 2022',
       category: {
         tag: 'Education',
@@ -50,7 +50,7 @@ export default function Timeline() {
     },
     {
       title: 'Masters in Computer and Software Engineering',
-      desc: 'Following my bachelors, I reinforced my already learned skills as well as the necessary skills to perform a detailed research on the topic of my masters thesis. During this time I also had the opportunity to develop a project for Vestas during one of my classes, as well as help organize the Talk a Bit event for said year.',
+      desc: 'Following my bachelors, I conntinued to improve myself and completed my master\'s thesis on Ranking Compilers\/Interpreters on Energy Efficiency. During this time I also had the opportunity to develop a project for Vestas, as well as help organize and manage the finances for the Talk a Bit event for FEUP.',
       date: 'July 2023',
       category: {
         tag: 'Education',

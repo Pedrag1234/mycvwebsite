@@ -97,7 +97,7 @@ export default function AboutMe() {
     My interests span both software development and video games, driving me to create innovative solutions and exciting projects. In my free time, I enjoy reading, playing video games, and staying active at the gym. These activities help me maintain a balanced lifestyle and keep my mind sharp.
   </p>
   <p className="text-white font-ubuntu text-base md:text-lg mb-4">
-    I am eager to take on new challenges that allow me to grow as a developer and as a person. I look forward to contributing to impactful projects and collaborating with like-minded professionals in the tech community. My ultimate goal is to develop new software and video games that make a difference.
+    I am eager to take on new challenges that allow me to grow as a developer and as a person. I look forward to contributing to impactful projects and collaborating with like-minded professionals in the tech community.
   </p>
   
   <InfoSection infos={infos} />
