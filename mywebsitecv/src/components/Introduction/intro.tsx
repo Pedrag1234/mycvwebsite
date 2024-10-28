@@ -55,14 +55,15 @@ export default function Intro() {
     >
       <Card className="bg-indigo-500/30 border-indigo-500/30 shadow-md mx-6">
         <CardHeader>
-          <CardTitle className="flex justify-center text-3xl  text-white font-ubuntu">I&apos;m Pedro Azevedo</CardTitle>
+          <CardTitle className="flex justify-center text-3xl  text-white font-ubuntu">Hello! I&apos;m Pedro Azevedo</CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col space-y-4">
-          <p className="flex justify-center text-white font-ubuntu text-sm md:text-base">
-            I am a Porto based software engineer currently looking for work.
+          <p className="flex justify-center text-white font-ubuntu text-sm md:text-base max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl text-center mx-auto">
+            I am a rececently graduated Porto based software engineer and I am currently looking for work.
           </p>
-          <p className="flex justify-center text-white font-ubuntu text-sm md:text-base">
-            In my free time, I enjoy doing some reading, playing video games, and going to the gym.
+          <p className="flex justify-center text-white font-ubuntu text-sm md:text-base max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl text-center mx-auto">
+            I enjoy reading, exercise and playing videogames. I also consider myself an honest hardworking person
+            that strives to continually improve myself as a person and developer.
           </p>
           <div className="flex justify-center space-x-16 py-4">
             <a href="https://github.com/Pedrag1234" target="_blank" rel="noopener noreferrer">

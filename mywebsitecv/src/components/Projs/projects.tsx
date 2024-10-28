@@ -150,7 +150,7 @@ export default function Projects() {
 
   return (
     <section id="projs" className="m-12 sm:m-2">
-      <h2 className="text-center text-3xl font-semibold pt-8 pb-8 md:pt-12 md:pb-12 mb-6 text-white">My Projects</h2>
+      <h2 className="text-center text-3xl font-semibold pt-8 pb-8 md:pt-12 md:pb-12 mb-6 text-white">Highlight Projects</h2>
       <ProjsSection projects={projects} />
     </section>
   );
